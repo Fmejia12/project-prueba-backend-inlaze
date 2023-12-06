@@ -29,4 +29,21 @@ export class User {
         comment: 'Contraseña del usuario',
     })
     password: string
+
+    @Column({
+        type: 'varchar',
+        length: 100,
+        unique: true,
+        comment: 'telefono del usuario',
+    })
+    phone: number
+
+    @Column({
+        type: 'varchar',
+        length: 100,
+        unique: true,
+        comment: 'role del usuario',
+    })
+    role: string
+
 }
